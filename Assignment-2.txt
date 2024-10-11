@@ -1,0 +1,8 @@
+Create an XML document with URI "/XML/Library/Book" in the Documents database.
+Rename document "/XML/Library/Book" to "/UCBOS/Library/Book". 
+Add the above document to the "Book" and "UCBOS" collections.
+Write a query to read the document "/UCBOS/Library/Book" from other databases.
+Delete the books in documents that were published before 2022. 
+Add a new Book to the document Title: Book 6 Author: Author101 Year: 2023 
+Add a new element Price for all books (give random values) 
+Update Author Names with a smaller case.

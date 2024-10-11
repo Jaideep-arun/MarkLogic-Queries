@@ -1,0 +1,18 @@
+ </book>
+  <book>
+    <title>Book 5</title>
+    <author>Author 2</author>
+    <year>2023</year>
+  </book>
+  <book>
+    <title>Book 3</title>
+    <author>Author 1</author>
+    <year>2020</year>
+  </book>
+</library>
+ 
+1] Insert above xml document into documents database.
+2] Retrieve all books from an XML document
+3] Retrieve all unique authors from an XML document
+4] Retrieve the count of books written by each author
+5] Retrieve books published after a specific year 2020
