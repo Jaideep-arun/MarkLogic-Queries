@@ -1,0 +1,52 @@
+Assignment 6:
+Convert the below JSON string to a CTS query:
+ 
+{
+    "condition":"and",
+    "rules":[
+        {
+            "field":"C1",
+            "operator":null
+        },
+        {
+            "field":"C2",
+            "operator":null
+        },
+        {
+            "condition":"or",
+            "rules":[
+                {
+                    "condition":"and",
+                    "rules":[
+                        {
+                            "field":"C3",
+                            "operator":null
+                        },
+                        {
+                            "field":"C6",
+                            "operator":null
+                        }
+                    ]
+                },
+                {
+                    "condition":"and",
+                    "rules":[
+                        {
+                            "field":"C4",
+                            "operator":null
+                        },
+                        {
+                            "field":"C5",
+                            "operator":null
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
+ 
+Expected Result: 
+
+
+cts:and-query((C1, C2, cts:or-query((cts:and-query((C3, C6)), cts:and-query((C4, C5))))))
