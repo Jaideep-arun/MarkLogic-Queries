@@ -57,4 +57,3 @@ let $config := admin:get-configuration()
 
 (: Final save configuration :)
 return admin:save-configuration($config)
- 
